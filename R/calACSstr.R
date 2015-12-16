@@ -12,11 +12,11 @@
 #' @export
 
 calACSstrStrict <- function(strA, strB, sep="-", dropFirstItem=FALSE){
-  #test
-  strA <- 'aa-b-c'
-  strB <- 'aa-b-c-d'
-  sep='-'
-  dropFirstItem=FALSE
+#   #test
+#   strA <- 'aa-b-c'
+#   strB <- 'aa-b-c-d'
+#   sep='-'
+#   dropFirstItem=FALSE
 
   countACS <- 1 #count the empty set as one common subsequence
 

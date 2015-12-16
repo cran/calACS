@@ -1,10 +1,10 @@
-fc254e71fbb942d1fcfde0b6a7755213 *DESCRIPTION
+2b7a281779c29941ed3c0ef160d3cd1e *DESCRIPTION
 587b77e5b35cfb5162722c503c731aea *NAMESPACE
 4df57132c1718e2ad3eaa747ea8cdeaf *R/GeneratePossibleSubsequences.r
 cc0b65a8db0887af1fc588fe4f2fffbe *R/calACS.R
 4948316acbb01bc1785d537ce73863c5 *R/calACSLoose.r
-64b3a09d3b1c2f2a8fa57e5b4334f625 *R/calACSstr.R
-efcc0aad6f9d4ea2aea55a7484522b12 *R/calACSstrLoose.r
+8a7c5e1024e938666d4aefa4a6764f79 *R/calACSstr.R
+5f640f39e790589b8611e421b4fc1fb5 *R/calACSstrLoose.r
 c489d5c3f886ec4d6372563313546122 *R/is.subvector.r
 29d4e5549cd1b4f6a72441f33f0d9db9 *man/GeneratePossibleSubsequences.Rd
 43a405321c8bde3c51dcf62f62c9fdb3 *man/calACSLoose.Rd

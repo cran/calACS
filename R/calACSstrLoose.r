@@ -13,11 +13,12 @@
 #' @export
 
 calACSstrLoose <- function(strA, strB, sep="-", dropFirstItem=FALSE){
-  #test
-  strA <- 'aa-b-c'
-  strB <- 'aa-b-c-d'
-  sep='-'
-  dropFirstItem=FALSE
+#   #test
+#   strA <- 'aa-b-c'
+#   strB <- 'aa-b-c-d'
+#   sep='-'
+#   dropFirstItem=FALSE
+
   A <- unlist(strsplit(strA, sep))
   B <- unlist(strsplit(strB, sep))
 
