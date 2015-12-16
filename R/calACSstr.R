@@ -6,12 +6,20 @@
 #' @param dropFirstItem Boolean. If true, the first item in each sequence is excluded from counting all subsequences
 #' @return The total number of all common subsequences as an integer
 #' @examples
-#' calACSstr("q-w-e-r", "q-e-w-r", "-")
-#' calACSstr("itemToBeDropped-q-w-e-r", "itemToBeDroped-q-e-w-r", "-", dropFirstItem=TRUE)
+#' calACSstrStrict("q-w-e-r", "q-e-w-r", "-")
+#' calACSstrStrict("itemToBeDropped-q-w-e-r", "itemToBeDroped-q-e-w-r", "-", dropFirstItem=TRUE)
 #'
 #' @export
 
-calACSstr <- function(strA, strB, sep="-", dropFirstItem=FALSE){
+calACSstrStrict <- function(strA, strB, sep="-", dropFirstItem=FALSE){
+  #test
+  strA <- 'aa-b-c'
+  strB <- 'aa-b-c-d'
+  sep='-'
+  dropFirstItem=FALSE
+
+  countACS <- 1 #count the empty set as one common subsequence
+
   A <- unlist(strsplit(strA, sep))
   B <- unlist(strsplit(strB, sep))
 
@@ -20,13 +28,14 @@ calACSstr <- function(strA, strB, sep="-", dropFirstItem=FALSE){
     B <- B[-1]
   }
 
-  N <- array(data=1,dim=c(length(A)+1,length(B)+1))
-  for (i in 2:(length(A)+1)){
-    for (j in 2:(length(B)+1)){
-      ifelse( identical(A[i],B[j]), N[i,j] <- N[i-1,j-1]*2, N[i,j] <- N[i-1,j]+N[i,j-1]-N[i-1,j-1])
+  listSubseq <- GeneratePossibleSubsequences(A)
+
+  for(i in 1:length(listSubseq)){
+    if(is.subvector(subvec = listSubseq[[i]],vec = A) && is.subvector(subvec = listSubseq[[i]], vec = B)){
+      countACS=countACS+1
     }
   }
-  N[i,j]
+  countACS
 }
 
 
