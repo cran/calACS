@@ -2,7 +2,8 @@
 % Please edit documentation in R/is.subvector.r
 \name{is.subvector}
 \alias{is.subvector}
-\title{Check if the input vector subvec is a subvector of the other input vector vec}
+\title{Internal function:
+Check if the input vector subvec is a subvector of the other input vector vec}
 \usage{
 is.subvector(subvec, vec)
 }
@@ -12,6 +13,7 @@ is.subvector(subvec, vec)
 \item{vec}{the input vector that may contain the subvector}
 }
 \description{
+Internal function:
 Check if the input vector subvec is a subvector of the other input vector vec
 }
 

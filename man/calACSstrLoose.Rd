@@ -2,7 +2,8 @@
 % Please edit documentation in R/calACSstrLoose.r
 \name{calACSstrLoose}
 \alias{calACSstrLoose}
-\title{Calculate the total number of all common subsequences between 2 strings.
+\title{Internal function:
+Calculate the total number of all common subsequences between 2 strings.
 Subsequences can be interrupted by items, i.e. q-w is a common subsequence of q-w-e-r and q-e-w-r}
 \usage{
 calACSstrLoose(strA, strB, sep = "-", dropFirstItem = FALSE)
@@ -20,12 +21,8 @@ calACSstrLoose(strA, strB, sep = "-", dropFirstItem = FALSE)
 The total number of all common subsequences as an integer
 }
 \description{
+Internal function:
 Calculate the total number of all common subsequences between 2 strings.
 Subsequences can be interrupted by items, i.e. q-w is a common subsequence of q-w-e-r and q-e-w-r
-}
-\examples{
-calACSstrLoose("q-w-e-r", "q-e-w-r", "-")
-calACSstrLoose("itemToBeDropped-q-w-e-r", "itemToBeDroped-q-e-w-r", "-", dropFirstItem=TRUE)
-
 }
 

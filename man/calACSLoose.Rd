@@ -2,8 +2,8 @@
 % Please edit documentation in R/calACSLoose.r
 \name{calACSLoose}
 \alias{calACSLoose}
-\title{Calculate the total number of all common subsequences between a string and a vector/list of strings
-Subsequences can be interrupted by items, i.e. q-w is a common subsequence of q-w-e-r and q-e-w-r}
+\title{Calculate the total number of all common subsequences between a string and a vector/list of strings.
+Subsequences can be interrupted by items, i.e. q-w is considered a subsequence of q-e-w-r}
 \usage{
 calACSLoose(vecA, listB, sep = "-", dropFirstItem = FALSE)
 }
@@ -20,8 +20,8 @@ calACSLoose(vecA, listB, sep = "-", dropFirstItem = FALSE)
 The total number of all common subsequences as an integer in a vector
 }
 \description{
-Calculate the total number of all common subsequences between a string and a vector/list of strings
-Subsequences can be interrupted by items, i.e. q-w is a common subsequence of q-w-e-r and q-e-w-r
+Calculate the total number of all common subsequences between a string and a vector/list of strings.
+Subsequences can be interrupted by items, i.e. q-w is considered a subsequence of q-e-w-r
 }
 \examples{
 calACSLoose("q-w-e-r", c("q-e-w-r","q-r-e-w"), "-")

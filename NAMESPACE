@@ -2,5 +2,6 @@
 
 export(calACSLoose)
 export(calACSStrict)
-export(calACSstrLoose)
-export(calACSstrStrict)
+export(lenACSStrict)
+export(lenLCSStrict)
+export(longestVec)

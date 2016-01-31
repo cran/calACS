@@ -1,5 +1,5 @@
-#' Calculate the total number of all common subsequences between a string and a vector/list of strings
-#' Subsequences can be interrupted by items, i.e. q-w is a common subsequence of q-w-e-r and q-e-w-r
+#' Calculate the total number of all common subsequences between a string and a vector/list of strings.
+#' Subsequences can be interrupted by items, i.e. q-w is considered a subsequence of q-e-w-r
 #'
 #' @param vecA The single string
 #' @param listB The vector/list of 1 or more strings
