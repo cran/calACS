@@ -1,9 +1,9 @@
-#' Internal function:
-#' Genearte all possible subsequences of the input vector. Require all items in the vector to be unique
-#'
-#' @param vin input vector that contains unique items
-#' @param ignoreLenOneSubseq Boolean. If true, all length one subequences are not counted as common subsequences
-#' @return a list of vectors, each a unique subsequence of the input vector
+# Internal function:
+# Genearte all possible subsequences of the input vector. Require all items in the vector to be unique
+#
+# param vin input vector that contains unique items
+# param ignoreLenOneSubseq Boolean. If true, all length one subequences are not counted as common subsequences
+# return a list of vectors, each a unique subsequence of the input vector
 
 GeneratePossibleSubsequences <- function(vin, ignoreLenOneSubseq=FALSE){
   #test

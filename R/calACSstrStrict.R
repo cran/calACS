@@ -1,14 +1,14 @@
-#' Internal function:
-#' Calculate the total number of all common subsequences between 2 strings
-#' Subsequences cannot be interrupted by any item, i.e. q-w is not a common subsequence of q-w-e-r and q-e-w-r due to the interrupting 'e' in the second sequence
-#'
-#' @param strA First string
-#' @param strB Second string
-#' @param sep Delimiter separating each items in a sequence
-#' @param dropFirstItem Boolean. If true, the first item in each sequence is excluded from counting all subsequences
-#' @param ignoreLenOneSubseq Boolean. If true, all length one subequences are not counted as common subsequences
-#' @param ignoreLenZeroSubseq Boolean. If true, the length zero subsequence (empty set) is not counted as a common subsequence
-#' @return The total number of all common subsequences as an integer
+# Internal function:
+# Calculate the total number of all common subsequences between 2 strings
+# Subsequences cannot be interrupted by any item, i.e. q-w is not a common subsequence of q-w-e-r and q-e-w-r due to the interrupting 'e' in the second sequence
+#
+# param strA First string
+# param strB Second string
+# param sep Delimiter separating each items in a sequence
+# param dropFirstItem Boolean. If true, the first item in each sequence is excluded from counting all subsequences
+# param ignoreLenOneSubseq Boolean. If true, all length one subequences are not counted as common subsequences
+# param ignoreLenZeroSubseq Boolean. If true, the length zero subsequence (empty set) is not counted as a common subsequence
+# return The total number of all common subsequences as an integer
 
 calACSstrStrict <- function(strA, strB, sep="-", dropFirstItem=FALSE, ignoreLenOneSubseq=FALSE, ignoreLenZeroSubseq=FALSE){
 #   #test

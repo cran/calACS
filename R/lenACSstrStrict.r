@@ -1,11 +1,11 @@
-#' Internal function:
-#' Calculate the length of the common subsequences between 2 input strings
-#' @param strA First string
-#' @param strB Second string
-#' @param sep Delimiter separating each items in a sequence
-#' @param dropFirstItem Boolean. If true, the first item in each sequence is excluded from counting all subsequences
-#' @param ignoreLenOneSubseq Boolean. If true, all length one subequences are not counted as common subsequences
-#' @return a vector containing the length of each common subsequence
+# Internal function:
+# Calculate the length of the common subsequences between 2 input strings
+# param strA First string
+# param strB Second string
+# param sep Delimiter separating each items in a sequence
+# param dropFirstItem Boolean. If true, the first item in each sequence is excluded from counting all subsequences
+# param ignoreLenOneSubseq Boolean. If true, all length one subequences are not counted as common subsequences
+# return a vector containing the length of each common subsequence
 
 
 lenACSstrStrict <- function(strA, strB, sep="-", dropFirstItem=FALSE, ignoreLenOneSubseq=FALSE){

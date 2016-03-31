@@ -1,10 +1,10 @@
-#' Internal function:
-#' Calculate the length of the longest common subsequence between 2 input strings
-#' @param strA First string
-#' @param strB Second string
-#' @param sep Delimiter separating each items in a sequence
-#' @param dropFirstItem Boolean. If true, the first item in each sequence is excluded from counting all subsequences
-#' @return a vector containing the length of each common subsequence
+# Internal function:
+# Calculate the length of the longest common subsequence between 2 input strings
+# param strA First string
+# param strB Second string
+# param sep Delimiter separating each items in a sequence
+# param dropFirstItem Boolean. If true, the first item in each sequence is excluded from counting all subsequences
+# return a vector containing the length of each common subsequence
 
 
 lenLCSstrStrict <- function(strA, strB, sep="-", dropFirstItem=FALSE){

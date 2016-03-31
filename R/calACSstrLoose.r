@@ -1,12 +1,12 @@
-#' Internal function:
-#' Calculate the total number of all common subsequences between 2 strings.
-#' Subsequences can be interrupted by items, i.e. q-w is a common subsequence of q-w-e-r and q-e-w-r
-#'
-#' @param strA First string
-#' @param strB Second string
-#' @param sep Delimiter separating each items in a sequence
-#' @param dropFirstItem Boolean. If true, the first item in each sequence is excluded from counting all subsequences
-#' @return The total number of all common subsequences as an integer
+# Internal function:
+# Calculate the total number of all common subsequences between 2 strings.
+# Subsequences can be interrupted by items, i.e. q-w is a common subsequence of q-w-e-r and q-e-w-r
+#
+# param strA First string
+# param strB Second string
+# param sep Delimiter separating each items in a sequence
+# param dropFirstItem Boolean. If true, the first item in each sequence is excluded from counting all subsequences
+# return The total number of all common subsequences as an integer
 
 
 calACSstrLoose <- function(strA, strB, sep="-", dropFirstItem=FALSE){
